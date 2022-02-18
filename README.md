@@ -3,12 +3,16 @@ This is a minimal online user service written to be dropped into an Event-Driven
 ## Modules used
 Config
 > https://github.com/node-config/node-config
+
 Express
 > https://github.com/expressjs/express
+
 Kafka JS
 > https://github.com/tulios/kafkajs
+
 MongoDb
 > https://github.com/mongodb/node-mongodb-native
+
 ## Configuration
 
 Modify config/default.json (or provide a production.json) with your kafka bootstrap and topics, mongo url and db, optionally change the server port (default 3001). Additional configurations relating to timeouts can be configured in listener/listener.js
