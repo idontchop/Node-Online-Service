@@ -1,18 +1,13 @@
-import config from 'config'
-
 import createError from 'http-errors'
 import express from 'express'
-import path from 'path'
 import cookieParser from 'cookie-parser'
 import logger from 'morgan'
-import hbs from 'hbs'
 import bodyParser from 'body-parser'
 
 import indexRouter from './routes/index.js'
 
 import listener from './listener/listener.js'
 
-import { type } from 'os'
 import OnlineStore from './models/OnlineStore.mjs'
 
 
