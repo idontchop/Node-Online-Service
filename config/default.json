@@ -1,0 +1,15 @@
+{
+    "server": {
+        "host": "localhost",
+        "port": 3001
+    },
+    "mongo": {
+        "url": "mongodb://localhost/",
+        "db": "online_users"
+    },
+    "kafka-consumer": {
+        "bootstrap": "staging:9092",
+        "groupId": "onlineService-test20",
+        "topics": ["Likes", "Matches", "Posts"]
+    }
+}
