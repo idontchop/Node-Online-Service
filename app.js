@@ -19,17 +19,11 @@ import OnlineStore from './models/OnlineStore.mjs'
 console.log("Starting node-online-service by github.com/idontchop")
 var app = express();
 
-
-// view engine setup
-app.set('views', 'views');
-app.set('view engine', 'jade');
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public'));
-hbs.registerPartials('partials');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
